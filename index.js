@@ -39,10 +39,20 @@ let reversedNumber = number.toString().split("").reverse().join("");
 console.log(reversedNumber);
 
 
-// //Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.
+//Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.
 
-// let deposit = prompt("Введіть суму вкладу:");
-// let percent = deposit * 0.05;
-// console.log(`Нараховані відсотки: ${percent}`);
+let deposit = prompt("Введіть суму вкладу:");
+let annualRate = 0.05;
+let periodMonths = 2;
+
+let interest = deposit * annualRate * (periodMonths / 12);
+
+console.log(`Нараховані відсотки за 2 місяці: ${interest.toFixed(2)} грн`);
 
 
+//Що повернуть вирази:
+console.log(2 && 0 && 3)  //повертає перше false-значення — 0
+
+console.log(2 || 0 || 3)  //повертає перше true-значення — 2
+
+console.log(2 && 0 || 3)  //2 && 0 → 0, потім 0 || 3 → 3
