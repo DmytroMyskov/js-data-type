@@ -22,4 +22,27 @@ let fileCount = Math.floor(flashSizeMB / fileSizeMB);
 console.log(`На флешку поміститься ${fileCount} файл(ів) по 820 МБ.`);
 
 
-//
+//Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. Програма виводить скільки шоколадок може купити користувач і скільки здачі у нього залишиться.
+
+let money = prompt("Введіть суму грошей в гаманці:");
+let price = prompt("Введіть ціну однієї шоколадки:");
+let chocolateCount = Math.floor(money / price);
+let change = money % price;
+
+console.log(`Виможе купити ${chocolateCount} шоколадок. Решта: ${change} грн.`);
+
+
+//Запитай у користувача тризначне число і виведи його задом наперед. Для вирішення завдання тобі знадобиться оператор % (залишок від ділення).
+
+let number = prompt("Введіть тризначне число:");
+let reversedNumber = number.toString().split("").reverse().join("");
+console.log(reversedNumber);
+
+
+// //Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.
+
+// let deposit = prompt("Введіть суму вкладу:");
+// let percent = deposit * 0.05;
+// console.log(`Нараховані відсотки: ${percent}`);
+
+
